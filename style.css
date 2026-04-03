@@ -1,0 +1,83 @@
+/* --- Общие стили --- */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 20px;
+  background: #fafafa;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+section.examples {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+/* --- 1) Селектор потомков --- */
+
+.parent h2 {
+  color: #005bbb;
+}
+
+.parent p {
+  color: #d04a4a;
+}
+
+/* выбираем span внутри p внутри div.parent */
+.parent p span {
+  font-weight: bold;
+  color: #0a7f0a;
+}
+
+/* --- 2) Дочерний селектор --- */
+
+/* только прямые p внутри .child-example */
+.child-example > p {
+  color: #a056d0;
+  font-size: 18px;
+}
+
+/* вложенный p не будет срабатывать тут */
+
+/* --- 3) Селектор класса --- */
+
+.color-blocks .highlight {
+  background: #fffb87;
+  padding: 8px;
+  border-left: 4px solid #f0c200;
+}
+
+/* --- 4) Селектор по ID --- */
+
+#special {
+  padding: 10px;
+  background: #e8f4ff;
+  border: 2px solid #4a90e2;
+}
+
+/* --- 5) Скругленные границы и оформление --- */
+
+.border-box .rounded {
+  border: 2px dashed #4a4a4a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.border-box .circle {
+  width: 120px;
+  height: 120px;
+  background: #ff9696;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Пример селекторов и границ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>CSS: селекторы и оформление</h1>
+
+  <section class="examples">
+
+    <!-- пример селектора потомков -->
+    <div class="parent">
+      <h2>Селектор потомков</h2>
+      <p>Это абзац внутри div.parent</p>
+      <p><span>Спан внутри абзаца</span></p>
+    </div>
+
+    <!-- пример дочернего селектора -->
+    <div class="child-example">
+      <h2>Дочерний селектор</h2>
+      <p>Первый уровень</p>
+      <div>
+        <p>Вложенный абзац (не прямой потомок)</p>
+      </div>
+    </div>
+
+    <!-- пример селектора класса -->
+    <div class="color-blocks">
+      <h2>Классовые селекторы</h2>
+      <p class="highlight">Этот абзац с классом highlight</p>
+      <p>Обычный абзац</p>
+    </div>
+
+    <!-- пример селектора по ID -->
+    <div id="special">
+      <h2>ID селектор</h2>
+      <p>Этот блок оформлен через ID</p>
+    </div>
+
+    <!-- пример скругленных границ -->
+    <div class="border-box">
+      <h2>Скругленные границы</h2>
+      <div class="rounded">Я с закругленными углами!</div>
+      <div class="circle">Я круг 😊</div>
+    </div>
+
+  </section>
+
+</body>
+</html>
